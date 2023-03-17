@@ -1,0 +1,157 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.hidden {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  /*
+  font-family: "Nanum Pen Script", cursive;
+  */
+  font-family: "tvnFont", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flexbox;
+}
+
+#bgImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 500ms linear;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header-div"
+    "form-greeting-div"
+    "clock-div"
+    "spacer-div"
+    "quote-div";
+}
+#header-div {
+  grid-area: header-div;
+}
+#form-greeting-div {
+  grid-area: form-greeting-div;
+}
+#clock-div {
+  grid-area: clock-div;
+}
+
+#spacer-div {
+  grid-area: spacer-div;
+}
+#quote-div {
+  grid-area: quote-div;
+}
+
+#clock {
+  font-size: 10em;
+  /*font-family: "DotGothic16", sans-serif;*/
+
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.quote {
+  font-size: 2.4rem;
+  font-weight: lighter;
+}
+
+.js-form input {
+  height: 52px;
+  padding: 0 12px;
+  margin-bottom: 40px;
+  border-radius: 2px;
+  font-size: 18px;
+  background-color: #f6f8fa;
+  color: #333e47;
+}
+
+.js-form input:focus {
+  border: 1px solid #2860e1;
+}
+
+.btn {
+  /*
+  height: 36px;
+  padding: 0 12px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  background-color: #f6f8fa;
+  color: #333e47;
+*/
+  background: #fff;
+  border-bottom: 4px inset rgba(0, 0, 0, 0.5);
+  border-left: 4px inset rgba(0, 0, 0, 0.5);
+  border-right: 4px inset rgba(255, 255, 255, 0.5);
+  border-top: 4px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem;
+  min-width: 100px;
+  padding: 0.2rem;
+  width: auto;
+  font-family: "DotGothic16", sans-serif;
+}
+.btn:hover {
+  background-color: black;
+  color: #fff;
+  animation: ease-in-out 500ms;
+}
+
+#greeting {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+
+
+
+
+#last-row-space{
+  height: 50px;
+}
+
+/*
+.whole {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+*/
+/* left side 
+.left {
+  width: 50%;
+  text-align: center;
+  padding-left: 5%;
+}
+*/
+/* right side 
+.right {
+  width: 50%;
+  text-align: center;
+}
+*/

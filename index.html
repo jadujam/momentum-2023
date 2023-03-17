@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Momentum App</title> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+    @font-face {
+        font-family: "tvnFont";
+        src: url("fonts/tvN_Enjoystories_Bold.ttf");
+    }
+    </style>
+
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+    <body>
+        
+        <div class="container">
+
+            <div id="header-div"></div>
+
+            <div id="clock-div">
+                <h2 id= "clock">00:00:00</h2>
+            </div>
+
+            <div id="form-greeting-div">
+                <form class ="hidden js-form" id="login-form">
+                    <input
+                        required
+                        maxlength="22"
+                        type="text" 
+                        placeholder="What is your name?">
+                    <button class= "btn">Enter</button>
+                </form>
+                <h1 id="greeting" class="hidden js-greetings"></h1>
+            </div>
+
+            <div id= "spacer-div"></div>
+            
+            <div id="quote-div">
+              <!-- <span class="quote">아래의 확언을 소리내어 읽어보세요:<span> -->
+                    <div id="quote">
+                        <span class="quote"></span>
+                    </div>
+            </div>
+
+            <div id= "last-row-space"></div>
+
+            
+
+        </div>
+        
+
+
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+
+    </body>
+</html>
